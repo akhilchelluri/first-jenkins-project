@@ -1,0 +1,9 @@
+{
+  "name": "myapp-node15",
+  "version": "1.0.0",
+  "description": "Simple Jenkins Docker Agent demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
