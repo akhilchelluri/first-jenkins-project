@@ -1,9 +1,13 @@
 pipeline {
     agent {
         docker {
-            image 'node:15'
+            image 'node:14'
         }
     }
+     environment {
+    HOME = "${WORKSPACE}"
+    NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+  }
 
     stages {
         stage('Check Version') {
